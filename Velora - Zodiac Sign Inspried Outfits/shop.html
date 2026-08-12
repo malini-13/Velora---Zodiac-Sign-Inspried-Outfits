@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Zodiac Outfits | VELORA Luxury Fashion</title>
+  <meta name="description" content="Shop all 12 Velora zodiac outfits—luxury astrology-inspired clothing shaped by mythology, dark elegance and editorial fashion.">
+  <link rel="canonical" href="https://www.velora.com/shop.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VELORA">
+  <meta property="og:title" content="Shop Zodiac Outfits | VELORA Luxury Fashion">
+  <meta property="og:description" content="Browse all 12 zodiac inspired outfits from Velora, a dark luxury fashion label with mythology-led style.">
+  <meta property="og:url" content="https://www.velora.com/shop.html">
+  <meta property="og:image" content="https://www.velora.com/assets/hero/velora-hero.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shop Zodiac Outfits | VELORA Luxury Fashion">
+  <meta name="twitter:description" content="Browse all 12 zodiac inspired outfits from Velora, a dark luxury fashion label with mythology-led style.">
+  <meta name="twitter:image" content="https://www.velora.com/assets/hero/velora-hero.jpeg">
+  <meta name="theme-color" content="#0b0a0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VELORA",
+    "url": "https://www.velora.com/",
+    "logo": "https://www.velora.com/assets/logo/velora-logo.jpeg"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VELORA",
+    "url": "https://www.velora.com/"
+  }
+  </script>
+  <script id="velora-product-schema" type="application/ld+json"></script>
+  <style>
+    .shop-intro-wrap {
+      display: grid;
+      gap: 20px;
+      margin-bottom: 34px;
+    }
+
+    .shop-intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 22px;
+    }
+
+    .shop-intro-panel {
+      padding: clamp(20px, 3vw, 28px);
+      border: 1px solid rgba(242, 237, 229, 0.1);
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(24, 22, 29, 0.82), rgba(18, 17, 22, 0.74));
+    }
+
+    .shop-intro-panel h2 {
+      margin: 10px 0 12px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+      font-weight: 500;
+      line-height: 0.95;
+    }
+
+    .shop-controls {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: end;
+      padding: 16px;
+      border: 1px solid rgba(242, 237, 229, 0.1);
+      border-radius: 20px;
+      background: rgba(24, 22, 29, 0.62);
+    }
+
+    .shop-filters {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .shop-control {
+      display: grid;
+      gap: 8px;
+    }
+
+    .shop-control label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+
+    .shop-control select {
+      min-height: 46px;
+      border-radius: 14px;
+      border: 1px solid rgba(242, 237, 229, 0.12);
+      background: rgba(11, 10, 13, 0.42);
+      color: var(--text);
+      padding: 0.7rem 0.85rem;
+    }
+
+    .shop-count {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      color: var(--accent-2);
+      white-space: nowrap;
+    }
+
+    .shop-products-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .shop-media-link {
+      display: block;
+      color: inherit;
+    }
+
+    .shop-badge {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      z-index: 1;
+      border-radius: 999px;
+      border: 1px solid rgba(242, 237, 229, 0.22);
+      background: rgba(11, 10, 13, 0.65);
+      padding: 0.3rem 0.58rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.62rem;
+      color: #f2ede5;
+    }
+
+    @media (max-width: 1120px) {
+      .shop-products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px) {
+      .shop-intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .shop-controls {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shop-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .shop-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .shop-filters {
+        grid-template-columns: 1fr;
+      }
+
+      .shop-control select {
+        min-height: 44px;
+      }
+    }
+  </style>
+</head>
+<body data-page="shop">
+  <header class="site-header" data-header>
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="VELORA home">
+        <img src="assets/logo/velora-logo.jpeg" alt="VELORA logo" width="320" height="320">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a data-nav-link="home" href="index.html">Home</a>
+        <a data-nav-link="shop" href="shop.html">Shop</a>
+        <a data-nav-link="find" href="find-your-zodiac.html">Find Your Zodiac</a>
+        <a data-nav-link="about" href="about.html">About</a>
+        <a data-nav-link="contact" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" type="button" aria-label="View cart" data-cart-open>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 5h2l1.4 7.2a1 1 0 0 0 1 .8h7.8a1 1 0 0 0 1-.8L20 8H8.2"/>
+            <path d="M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile">
+      <div class="container">
+        <a data-nav-link="home" href="index.html">Home</a>
+        <a data-nav-link="shop" href="shop.html">Shop</a>
+        <a data-nav-link="find" href="find-your-zodiac.html">Find Your Zodiac</a>
+        <a data-nav-link="about" href="about.html">About</a>
+        <a data-nav-link="contact" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container section-head reveal">
+        <span class="eyebrow">Shop</span>
+        <h1 class="display-xl">The Zodiac Collection</h1>
+        <p class="lead">12 signs. 12 energies. 12 expressions of Velora.</p>
+        <p class="lead">Discover the signature pieces inspired by the mythology, personality and elemental energy of the zodiac.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="shop-intro-wrap">
+          <div class="shop-intro-grid">
+            <article class="shop-intro-panel">
+              <span class="eyebrow">The collection</span>
+              <h2>Editorial zodiac fashion for all twelve signs.</h2>
+              <p class="lead" style="margin:0;">Each Velora piece interprets a zodiac identity through silhouette, texture and myth while keeping the fashion language modern, refined and wearable.</p>
+            </article>
+            <div class="shop-intro-panel shop-controls" aria-label="Collection controls">
+              <div class="shop-filters">
+                <div class="shop-control">
+                  <label for="shop-element-filter">Filter by element</label>
+                  <select id="shop-element-filter" data-shop-filter>
+                    <option value="all">All</option>
+                    <option value="fire">Fire</option>
+                    <option value="earth">Earth</option>
+                    <option value="air">Air</option>
+                    <option value="water">Water</option>
+                  </select>
+                </div>
+                <div class="shop-control">
+                  <label for="shop-sort">Sort</label>
+                  <select id="shop-sort" data-shop-sort>
+                    <option value="featured">Featured</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="zodiac-asc">Zodiac: A–Z</option>
+                  </select>
+                </div>
+              </div>
+              <div class="shop-count" data-shop-count>12 Zodiac Pieces</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid shop-products-grid" data-shop-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" aria-label="VELORA home">
+          <img src="assets/logo/velora-logo.jpeg" alt="VELORA logo">
+        </a>
+        <p class="muted">Wear Your Zodiac. Embrace Your Fate.</p>
+        <p class="muted">The collection page for zodiac outfits, astrology inspired clothing and dark luxury fashion.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navigate</h3>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="find-your-zodiac.html">Find Your Zodiac</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h3>Signs</h3>
+        <a href="shop.html#product-taurus">Taurus</a>
+        <a href="shop.html#product-libra">Libra</a>
+        <a href="shop.html#product-scorpio">Scorpio</a>
+        <a href="shop.html#product-aquarius">Aquarius</a>
+      </div>
+      <div class="newsletter">
+        <h3 style="margin:0; text-transform:uppercase; letter-spacing:0.16em; font-size:0.76rem; color:var(--accent-2);">Newsletter</h3>
+        <p class="muted">Join for new drops and style guides.</p>
+        <input type="email" placeholder="Email address" aria-label="Email address">
+        <a class="btn btn--primary" href="contact.html">Join the List</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-current-year>2026</span> Velora. All rights reserved.</span>
+      <span>Luxury zodiac fashion • India</span>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" data-drawer-backdrop></div>
+  <aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <div class="subtotal">
+        <strong>Cart</strong>
+        <button class="btn btn--text" type="button" data-cart-close><span>Close</span></button>
+      </div>
+      <p class="muted">Your selection stays saved in this browser.</p>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="empty-state" data-cart-empty hidden>Your cart is empty for now.</div>
+    <div class="cart-drawer__footer">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong data-cart-subtotal>₹0</strong>
+      </div>
+      <p class="muted" style="margin:0;">Checkout is intentionally omitted for this frontend-only build.</p>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/zodiac.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const grid = document.querySelector("[data-shop-grid]");
+      const filterControl = document.querySelector("[data-shop-filter]");
+      const sortControl = document.querySelector("[data-shop-sort]");
+      const countNode = document.querySelector("[data-shop-count]");
+      if (!grid || !filterControl || !sortControl || !countNode || !window.VeloraProducts) return;
+
+      const money = new Intl.NumberFormat("en-IN", {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0
+      });
+
+      const featuredOrder = new Map(window.VeloraProducts.map((product, index) => [product.id, index]));
+      const badges = {
+        leo: "Featured",
+        scorpio: "New",
+        capricorn: "Featured"
+      };
+
+      function cardTemplate(product) {
+        const badge = badges[product.id];
+        return `
+          <article class="product-card" id="product-${product.id}">
+            <div class="product-media">
+              <a class="shop-media-link" href="shop.html#product-${product.id}" aria-label="View ${product.name}">
+                <img src="${product.image}" alt="${product.zodiac} zodiac inspired mythical fashion piece by Velora" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/products/placeholder.svg';">
+              </a>
+              <span class="chip product-badge">${product.zodiac}</span>
+              ${badge ? `<span class="shop-badge">${badge}</span>` : ""}
+            </div>
+            <div class="product-body">
+              <div class="product-title">
+                <p>${product.element} / ${product.dateRange}</p>
+                <h3>${product.name}</h3>
+              </div>
+              <div class="product-meta">
+                <span>${money.format(product.price)}</span>
+              </div>
+              <p class="product-description">${product.description}</p>
+              <div class="product-actions">
+                <a class="btn btn--ghost" href="shop.html#product-${product.id}">View Piece</a>
+                <button class="btn btn--primary" type="button" data-add-to-cart="${product.id}">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }
+
+      function sortProducts(items, sortValue) {
+        const sorted = [...items];
+        if (sortValue === "price-asc") {
+          sorted.sort((a, b) => a.price - b.price);
+        } else if (sortValue === "price-desc") {
+          sorted.sort((a, b) => b.price - a.price);
+        } else if (sortValue === "zodiac-asc") {
+          sorted.sort((a, b) => a.zodiac.localeCompare(b.zodiac));
+        } else {
+          sorted.sort((a, b) => featuredOrder.get(a.id) - featuredOrder.get(b.id));
+        }
+        return sorted;
+      }
+
+      function render() {
+        const elementValue = filterControl.value;
+        const sortValue = sortControl.value;
+        const filtered = elementValue === "all"
+          ? [...window.VeloraProducts]
+          : window.VeloraProducts.filter((product) => product.element.toLowerCase() === elementValue);
+
+        const finalProducts = sortProducts(filtered, sortValue);
+        grid.innerHTML = finalProducts.map(cardTemplate).join("");
+        countNode.textContent = `${finalProducts.length} Zodiac Piece${finalProducts.length === 1 ? "" : "s"}`;
+      }
+
+      filterControl.addEventListener("change", render);
+      sortControl.addEventListener("change", render);
+      render();
+    })();
+  </script>
+</body>
+</html>
